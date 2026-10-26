@@ -1,0 +1,22 @@
+import heapq
+
+values = [35, 20, 15, 40, 50, 10, 25]
+
+min_heap = []
+
+print("MIN HEAP")
+for value in values:
+    heapq.heappush(min_heap, value)
+    print(f"Inserted {value}: {min_heap}")
+
+print("Minimum value:", min_heap[0])
+
+max_heap = []
+
+print("\nMAX HEAP")
+for value in values:
+    heapq.heappush(max_heap, -value)
+    display_heap = [-x for x in max_heap]
+    print(f"Inserted {value}: {display_heap}")
+
+print("Maximum value:", -max_heap[0])
