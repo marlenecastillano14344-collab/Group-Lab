@@ -1,0 +1,27 @@
+import heapq
+
+numbers = [10, 20, 15, 30]
+
+heapq.heapify(numbers)
+print("Initial heap:", numbers)
+
+heapq.heappush(numbers, 5)
+print("After inserting 5:", numbers)
+
+print("Minimum element (peek):", numbers[0])
+
+extracted = heapq.heappop(numbers)
+print("Extracted value:", extracted)
+print("Heap after extraction:", numbers)
+
+heapq.heappush(numbers, 
+print("\nAfter inserting 8:", numbers)
+print("Minimum element (peek):", numbers[0])
+print("Extracted value:", heapq.heappop(numbers))
+print("Heap after extraction:", numbers)
+
+heapq.heappush(numbers, 3)
+print("\nAfter inserting 3:", numbers)
+print("Minimum element (peek):", numbers[0])
+print("Extracted value:", heapq.heappop(numbers))
+print("Heap after extraction:", numbers)
